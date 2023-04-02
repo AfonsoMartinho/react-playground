@@ -1,0 +1,11 @@
+@use "sass:map";
+
+$gb-scope: ".crud-users";
+
+@import "./scss/theme";
+@import "./scss/helpers";
+
+#{$gb-scope} {
+  // Project pages
+}
+
