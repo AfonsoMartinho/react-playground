@@ -7,7 +7,8 @@ $gb-scope: ".react-playground";
 
 #{$gb-scope} {
   // Project pages
-  @import "./wrappers/exercise1/index.scss";
+  @import "./wrappers/exercise1";
+  @import "./wrappers/exercise2";
 }
 
 html, body {

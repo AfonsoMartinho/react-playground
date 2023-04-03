@@ -1,0 +1,29 @@
+$rectangle-width: 300px;
+.exercise2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    &__color-shower {
+        width: $rectangle-width;
+        height: 200px;
+    }
+
+    &__option-buttons {
+        width: $rectangle-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            width: 70px;
+            height: 30px;
+        }
+    }
+
+    &__result{
+        font-size: 32px;
+    }
+}
