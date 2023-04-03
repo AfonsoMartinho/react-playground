@@ -1,0 +1,21 @@
+.exercise1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: map.get($brand-color, grey-dark);
+    color: map.get($brand-color, white);
+    position: relative;
+
+    &__clickable-area {
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    &__circle{
+        position: absolute;
+    }
+}

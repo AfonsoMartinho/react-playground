@@ -1,11 +1,17 @@
 @use "sass:map";
 
-$gb-scope: ".crud-users";
+$gb-scope: ".react-playground";
 
 @import "./scss/theme";
 @import "./scss/helpers";
 
 #{$gb-scope} {
   // Project pages
+  @import "./wrappers/exercise1/index.scss";
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
