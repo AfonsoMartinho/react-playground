@@ -1,0 +1,44 @@
+.exercise1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: map.get($brand-color, grey-dark);
+    color: map.get($brand-color, white);
+    position: relative;
+
+    h1 {
+        margin-bottom: 8px;
+        margin-top: 20px;
+    }
+
+    .buttons{
+        z-index: 9;
+    }
+
+
+    &__clickable-area {
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    &__circle{
+        position: absolute;
+        border: 1px solid map.get($brand-color, white);
+        border-radius: 50%;
+        animation-name: popCircle;
+        animation-duration: .5s;
+
+    }
+
+    @keyframes popCircle {
+        from { transform: scale3d(0.4,0.4,1);}
+        to {transform: scale3d(1,1,1);}
+      }
+}
